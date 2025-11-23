@@ -29,7 +29,7 @@ export default async function StatsPage({ params }) {
     last_clicked: doc.lastClicked,
     created_at: doc.createdAt || new Date()
   }
-    const shortUrl = `${process.env.NEXT_PUBLIC_HOST || 'http://localhost:3000'}/${link.code}`
+    const shortUrl = `${process.env.NEXT_PUBLIC_HOST || 'https://tiny-link-2svh.vercel.app/'}/${link.code}`
 
     return (
       <main className="min-h-screen bg-purple-50 p-8">
